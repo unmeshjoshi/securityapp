@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<project name="securityapp" default="package" basedir=".">
+    <property environment="env"/>
+    <property name="build.root" value="${basedir}"/>
+    <property name="src.dir" location="src/main/java"/>
+	<property name="build" location="target/build"/>
+    <property name="build.classes" location="${build}/classes"/>
+    <property name="dist" location="${build}/dist"/>
+	<property name="application.name" value="securityapp"/>
+	<property name="tomcat.web.app.dir" location="tools/apache-tomcat-7.0.32/webapps"/>
+	<property name="web.resources" location="src/main/webapp"/>
+    <path id="classpath">
+         <fileset dir="lib">
+            <include name="buildtime/*.jar"/>
+         	<include name="runtime/*.jar"/>
+        </fileset>
+     </path>
+
+    <target name="make-build-dir" description="Creates the build directory">
+        <mkdir dir="${build.classes}"/>
+    	<mkdir dir="${dist}"/>
+    </target>
+
+    <target name="compile" depends="make-build-dir" description="Compiles the source">
+        <javac target="1.5" 
+        	srcdir="${src.dir}"
+        	destdir="${build.classes}"  
+        	classpathref="classpath"
+            debug="true"/>
+    </target>
+	
+	<target name="clean" description="Deletes all the build directories.">
+          <delete dir="${build.classes}"/>
+		  <delete dir="${dist}"/>
+    </target>
+
+	<target name="package" depends="compile">
+       <war destfile="${dist}/${application.name}.war" webxml="${web.resources}/WEB-INF/web.xml">
+            <lib dir="lib/runtime"/>
+            <fileset dir="${web.resources}">
+            	<exclude name="WEB-INF/web.xml"/>	
+       		</fileset>
+       		<classes dir="${build.classes}"/>
+        </war>
+    </target>
+	<target name="deploy" depends="package">
+		<delete dir="${tomcat.web.app.dir}/${application.name}"/>
+		<copy file="${dist}/${application.name}.war" todir="${tomcat.web.app.dir}"/>
+	</target>
+</project>

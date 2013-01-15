@@ -1,0 +1,87 @@
+14 Jan, 2013 6:29:32 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+14 Jan, 2013 6:29:32 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+14 Jan, 2013 6:29:32 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+14 Jan, 2013 6:29:32 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 498 ms
+14 Jan, 2013 6:29:32 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+14 Jan, 2013 6:29:32 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+14 Jan, 2013 6:29:32 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/flightbooking.war
+14 Jan, 2013 6:29:34 AM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/flightbooking]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:968)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1646)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> * in servlet mapping
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3217)
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3192)
+	at org.apache.catalina.deploy.WebXml.configureContext(WebXml.java:1305)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1349)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:878)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:369)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5173)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 11 more
+14 Jan, 2013 6:29:34 AM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/flightbooking.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/flightbooking]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:968)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1646)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+14 Jan, 2013 6:29:34 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/docs
+14 Jan, 2013 6:29:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/examples
+14 Jan, 2013 6:29:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/ROOT
+14 Jan, 2013 6:29:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/manager
+14 Jan, 2013 6:29:35 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/host-manager
+14 Jan, 2013 6:29:35 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+14 Jan, 2013 6:29:35 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+14 Jan, 2013 6:29:35 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2505 ms
+14 Jan, 2013 6:29:36 AM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14 Jan, 2013 6:29:36 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+14 Jan, 2013 6:29:36 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+14 Jan, 2013 6:29:36 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+14 Jan, 2013 6:29:36 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+14 Jan, 2013 6:29:36 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+14 Jan, 2013 6:29:36 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+14 Jan, 2013 6:29:36 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
