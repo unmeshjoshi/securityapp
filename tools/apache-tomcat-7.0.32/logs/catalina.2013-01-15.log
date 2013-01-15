@@ -3808,3 +3808,735 @@ INFO: Starting ProtocolHandler ["http-bio-8080"]
 INFO: Starting ProtocolHandler ["ajp-bio-8009"]
 15 Jan, 2013 8:52:51 AM org.apache.catalina.startup.Catalina start
 INFO: Server startup in 5705 ms
+15 Jan, 2013 9:09:11 AM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/securityapp]
+15 Jan, 2013 9:09:11 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 08:52:48 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:09:11 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@63a1bc40: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:09:12 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/securityapp.war
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization started
+15 Jan, 2013 9:09:13 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:09:13 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:09:13 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+15 Jan, 2013 9:09:13 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6135b95d: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer postProcessTemplateLoaders
+INFO: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index] onto handler 'searchController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index.*] onto handler 'searchController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index/] onto handler 'searchController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users/] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login] onto handler 'adminLoginController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login.*] onto handler 'adminLoginController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login/] onto handler 'adminLoginController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins] onto handler 'adminCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin] onto handler 'adminCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:09:13 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization completed in 323 ms
+15 Jan, 2013 9:11:00 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+15 Jan, 2013 9:11:00 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:00 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 17 more
+15 Jan, 2013 9:11:00 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 17 more
+15 Jan, 2013 9:11:00 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:00 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Address already in use <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 16 more
+15 Jan, 2013 9:11:00 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 16 more
+15 Jan, 2013 9:11:00 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 421 ms
+15 Jan, 2013 9:11:00 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+15 Jan, 2013 9:11:00 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+15 Jan, 2013 9:11:00 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/securityapp.war
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization started
+15 Jan, 2013 9:11:03 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:03 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:03 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+15 Jan, 2013 9:11:03 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ec19fbf: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer postProcessTemplateLoaders
+INFO: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index] onto handler 'searchController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index.*] onto handler 'searchController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index/] onto handler 'searchController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login.*] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login/] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:03 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization completed in 635 ms
+15 Jan, 2013 9:11:03 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/flightbooking.war
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization started
+15 Jan, 2013 9:11:05 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:05 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:05 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+15 Jan, 2013 9:11:05 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51af7c57: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer postProcessTemplateLoaders
+INFO: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index] onto handler 'searchController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index.*] onto handler 'searchController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index/] onto handler 'searchController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login.*] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login/] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:05 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization completed in 381 ms
+15 Jan, 2013 9:11:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/docs
+15 Jan, 2013 9:11:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/examples
+15 Jan, 2013 9:11:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/ROOT
+15 Jan, 2013 9:11:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/manager
+15 Jan, 2013 9:11:05 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/host-manager
+15 Jan, 2013 9:11:05 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5388 ms
+15 Jan, 2013 9:11:05 AM org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:427)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:766)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:712)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:451)
+15 Jan, 2013 9:11:05 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:05 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:05 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+15 Jan, 2013 9:11:05 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:03 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:05 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ec19fbf: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:05 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:05 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:05 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51af7c57: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:05 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:05 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:05 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:05 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:28 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+15 Jan, 2013 9:11:28 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:28 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 17 more
+15 Jan, 2013 9:11:28 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 17 more
+15 Jan, 2013 9:11:28 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:28 AM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Address already in use <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 16 more
+15 Jan, 2013 9:11:28 AM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:633)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:658)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:450)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:383)
+	at java.net.ServerSocket.bind(ServerSocket.java:328)
+	at java.net.ServerSocket.<init>(ServerSocket.java:194)
+	at java.net.ServerSocket.<init>(ServerSocket.java:150)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 16 more
+15 Jan, 2013 9:11:28 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 472 ms
+15 Jan, 2013 9:11:28 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+15 Jan, 2013 9:11:28 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+15 Jan, 2013 9:11:28 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/securityapp.war
+15 Jan, 2013 9:11:43 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.32/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+15 Jan, 2013 9:11:43 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:43 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:43 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 452 ms
+15 Jan, 2013 9:11:43 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+15 Jan, 2013 9:11:43 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.32
+15 Jan, 2013 9:11:43 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/securityapp.war
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization started
+15 Jan, 2013 9:11:46 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:46 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:46 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+15 Jan, 2013 9:11:46 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647fc8b2: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer postProcessTemplateLoaders
+INFO: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index] onto handler 'searchController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index.*] onto handler 'searchController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index/] onto handler 'searchController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login.*] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login/] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:46 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:47 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization completed in 679 ms
+15 Jan, 2013 9:11:47 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/flightbooking.war
+15 Jan, 2013 9:11:48 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization started
+15 Jan, 2013 9:11:48 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:48 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:48 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+15 Jan, 2013 9:11:49 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8537d55: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer postProcessTemplateLoaders
+INFO: ClassTemplateLoader for Spring macros added to FreeMarker configuration
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index] onto handler 'searchController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index.*] onto handler 'searchController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/index/] onto handler 'searchController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/users/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions.*] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/user-permissions/] onto handler 'userPermissionController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/applications/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application.*] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-application/] onto handler 'applicationCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login.*] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admin-login/] onto handler 'adminLoginController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/admins/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin.*] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.handler.AbstractUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/add-admin/] onto handler 'adminCreatingController'
+15 Jan, 2013 9:11:49 AM org.springframework.web.servlet.FrameworkServlet initServletBean
+INFO: FrameworkServlet 'spring': initialization completed in 374 ms
+15 Jan, 2013 9:11:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/docs
+15 Jan, 2013 9:11:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/examples
+15 Jan, 2013 9:11:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/ROOT
+15 Jan, 2013 9:11:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/manager
+15 Jan, 2013 9:11:49 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/unmesh/work/projects/flightbooking/tools/apache-tomcat-7.0.32/webapps/host-manager
+15 Jan, 2013 9:11:49 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:49 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:49 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5427 ms
+15 Jan, 2013 9:11:52 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:52 AM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:52 AM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+15 Jan, 2013 9:11:52 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:46 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:52 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@647fc8b2: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:52 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'spring-servlet': startup date [Tue Jan 15 09:11:48 EST 2013]; root of context hierarchy
+15 Jan, 2013 9:11:52 AM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8537d55: defining beans [searchController,userPermissionController,applicationCreatingController,adminLoginController,adminCreatingController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,freemarkerConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+15 Jan, 2013 9:11:52 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:52 AM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+15 Jan, 2013 9:11:52 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+15 Jan, 2013 9:11:52 AM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]

@@ -169,7 +169,7 @@
       <file leaf-file-name="UserPermissionController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tripadvisor/auth/controllers/UserPermissionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="2235" selection-end="2235" vertical-scroll-proportion="1.0912409">
+            <state line="21" column="59" selection-start="750" selection-end="750" vertical-scroll-proportion="0.22384427">
               <folding />
             </state>
           </provider>
@@ -543,7 +543,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -916,7 +916,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tripadvisor/auth/controllers/UserPermissionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="2235" selection-end="2235" vertical-scroll-proportion="1.0912409">
+        <state line="21" column="59" selection-start="750" selection-end="750" vertical-scroll-proportion="0.22384427">
           <folding />
         </state>
       </provider>
